@@ -14,20 +14,20 @@ COMPEST is a program written in _java_ that enables advanced parameter estimatio
 * Secondly, it is recommended to have some familiarity with PEST (see Doherty 2016).
 
 1. Define:
-  1. Define problem for which observations (measurements) exist and for which a finite-element model can be created.
-  1. Choose which parameters to vary (e.g., to be estimated, to investigate uncertainty, etc.)
+		 1. Define problem for which observations (measurements) exist and for which a finite-element model can be created.
+		 1. Choose which parameters to vary (e.g., to be estimated, to investigate uncertainty, etc.)
 1. Prepare COMSOL Model:
-  1. Set up time-dependent model in COMSOL. (Note: stationary models may work too, but this will require some creativity on your part).
-  1. Ensure all parameters to be varied are defined as "
-  1. Set model output times to the times of the observations.
-  1. Delete the values of parameters to be varied (having them present can result in a duplicate definition error).
-  1. Launch the COMSOL Server in a separate command prompt using `"C:\XXXXXX\COMSOL53\Multiphysics\bin\win64\comsolmphserver.exe" -multi on` where `XXXXXX` is the location of your COMSOL installation.
+		1. Set up time-dependent model in COMSOL. (Note: stationary models may work too, but this will require some creativity on your part).
+		1. Ensure all parameters to be varied are defined as "
+		1. Set model output times to the times of the observations.
+		1. Delete the values of parameters to be varied (having them present can result in a duplicate definition error).
+		1. Launch the COMSOL Server in a separate command prompt using `"C:\XXXXXX\COMSOL53\Multiphysics\bin\win64\comsolmphserver.exe" -multi on` where `XXXXXX` is the location of your COMSOL installation.
 1. Prepare PEST:
-  1. **to do**
+		1. **to do**
 1. Prepare COMPEST:
-  1. If needed (e.g., COMSOL Java API plugins not in same location as mentioned in **Useful Commands** below), compile the java _class_ file using `javac -cp "C:\XXXXXX\COMSOL53\Multiphysics\plugins\*" COMPEST.java` where `XXXXXX` is the location of your COMSOL installation.
-  1. Define all parametes in the define.properties file (an explanation of all parameters is contained in the file header).
-  1. Ensure batch file is referring to correct location of COMSOL Java API files (see **Useful Commands** below). 
+		1. If needed (e.g., COMSOL Java API plugins not in same location as mentioned in **Useful Commands** below), compile the java _class_ file using `javac -cp "C:\XXXXXX\COMSOL53\Multiphysics\plugins\*" COMPEST.java` where `XXXXXX` is the location of your COMSOL installation.
+		1. Define all parametes in the define.properties file (an explanation of all parameters is contained in the file header).
+		1. Ensure batch file is referring to correct location of COMSOL Java API files (see **Useful Commands** below). 
 1. Execute the PEST-COMPEST-COMSOL by typing `PEST PCFFILENAME` in the command prompt, where `PCFFILENAME` is the name of the `.pst` "PEST Control File".
   
 
