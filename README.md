@@ -1,5 +1,5 @@
 # COMPEST
-A framework connecting COMSOL Multiphysics and PEST *(coming soon...)*
+An interface connecting COMSOL Multiphysics and PEST to solve inverse modelling problems using forward finite element models _(coming soon...)_
 
 ## Overview
 COMPEST is a program written in _java_ that enables advanced parameter estimation, sensitivity analysis, uncertainty analysis, and data-worth analysis to investigate ad solve inverse problems using forward finite-element models. The software functions as a link between [PEST](http://www.pesthomepage.org/) and [COMSOL Multiphysics](http://www.comsol.com). Although the software's functionality has been demonstarted with application to isotopic fractionation in the diffusion and degradation of chlorinated contaminants in the subsurface, any problem that can be modelled in COMSOL Multiphysics can be handled with some modification of the code.
