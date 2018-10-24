@@ -10,8 +10,8 @@ COMPEST is a program written in _java_ that enables advanced parameter estimatio
 * _(free)_ PEST (ver. 12.1.0 executable included here)
 
 ## How-to:
-* Firstly, it is recommended you read the article: **INSERT DOI HERE**
-* Secondly, it is recommended to have some familiarity with PEST (see Doherty 2016).
+* Firstly, it is recommended you read the article: (Halloran et al., _under review_)
+* Secondly, it is recommended to have some basic familiarity with PEST (see Doherty, 2016).
 
 1. **Define:**
    1. Define problem for which observations (measurements) exist and for which a finite-element model can be created.
@@ -23,11 +23,18 @@ COMPEST is a program written in _java_ that enables advanced parameter estimatio
    1. Delete the values of parameters to be varied (having them present can result in a duplicate definition error).
    1. Launch the COMSOL Server in a separate command prompt using `"C:\XXXXXX\COMSOL53\Multiphysics\bin\win64\comsolmphserver.exe" -multi on` where `XXXXXX` is the location of your COMSOL installation.
 1. **Prepare PEST:**
-   1. **to do**
+   1. Prepare `.tpl` file. This file tells PEST how to write parameter values to a `.inp` file during execution - this `.inp` file is read by COMPEST.
+   1. Prepare your observations/measurements and their corresponding outputs from the model.
+   1. Prepare `.ins` file(s), one file for each modelled observation output type. These files tell PEST how to read model output data in `.dat` (or other) files written by COMPEST.
+   1. Prepare `.bat` file with line to execute COMPEST (see **Useful Commands** below).
+   1. Prepare `.pst` (PEST control file) file. There are utility programs (see Doherty 2016) that are are useful for this.
 1. **Prepare COMPEST:**
     1. If needed (e.g., COMSOL Java API plugins not in same location as mentioned in **Useful Commands** below), compile the java _class_ file using `javac -cp "C:\XXXXXX\COMSOL53\Multiphysics\plugins\*" COMPEST.java` where `XXXXXX` is the location of your COMSOL installation.
-   1. Define all parametes in the define.properties file (an explanation of all parameters is contained in the file header).
+   1. Define all parametes in the `define.properties` file (an explanation of all parameters is contained in the file header).
    1. Ensure batch file is referring to correct location of COMSOL Java API files (see **Useful Commands** below). 
+1. **Final prep and checks:**
+   1. (optional) Run utility program `PESTCHEK` to check if `.pst` file has been set up properly.
+   1. (optional) Run the .pst file once to calculate the Jacobian with the initial values. Then run the utility program `PWTADJ1` to adjust the weights of each obervation group.
 1. **Make it happen:**
    1. Execute the PEST-COMPEST-COMSOL by typing `PEST PCFFILENAME` in the command prompt, where `PCFFILENAME` is the name of the `.pst` "PEST Control File".
   
@@ -46,3 +53,4 @@ _Replace the paths with the locations of your COMSOL java API files or server ex
 
 ## References:
 * Doherty, J. (2016). PEST Model-Independent Parameter Estimation User Manual Part I: PEST, SENSAN and Global Optimisers (6th ed.). Brisbane: Watermark Numerical Computing.
+* Halloran, L.J.S., P. Brunner, & D. Hunkeler (under review). "COMPEST, a COMSOL-PEST interface: Development and application to isotopic fractionation of chlorohydrocarbons during degradation and diffusion in aquitards"
