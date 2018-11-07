@@ -24,8 +24,9 @@ COMPEST is a program written in _java_ that enables advanced parameter estimatio
    1. Choose which parameters to vary (e.g., to be estimated, to investigate uncertainty, etc.)
 1. **Prepare COMSOL Model:**
    1. Set up time-dependent model in COMSOL. (Note: stationary models may work too, but this will require some creativity on your part).
-   1. Ensure all parameters to be varied are defined as "
+   1. Ensure all parameters to be varied are defined as global "variables" (i.e. not "parameters").
    1. Set model output times to the times of the observations.
+   1. In `Results>Data Sets` set the observation points using `Cut Point 1D` or similar. Set the `Point Number Variable` to `cpt1` (alternatively `COMPEST.java` will need to be modified and recompiled).
    1. Delete the values of parameters to be varied (having them present can result in a duplicate definition error).
    1. Launch the COMSOL Server in a separate command prompt using `"C:\XXXXXX\COMSOL53\Multiphysics\bin\win64\comsolmphserver.exe" -multi on` where `XXXXXX` is the location of your COMSOL installation.
 1. **Prepare PEST:**
