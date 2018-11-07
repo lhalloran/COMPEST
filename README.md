@@ -53,4 +53,4 @@ _Replace the paths with the locations of your COMSOL java API files or server ex
 
 ## References:
 * Doherty, J. (2016). PEST Model-Independent Parameter Estimation User Manual Part I: PEST, SENSAN and Global Optimisers (6th ed.). Brisbane: Watermark Numerical Computing.
-* Halloran, L.J.S., P. Brunner, & D. Hunkeler (under review). "COMPEST, a COMSOL-PEST interface: Development and application to isotopic fractionation of chlorohydrocarbons during degradation and diffusion in aquitards"
+* Halloran, L.J.S., P. Brunner, & D. Hunkeler (under review). "COMPEST, a PEST-COMSOL interface for inverse multiphysics modelling: Development and application to isotopic fractionation of groundwater contaminants"
