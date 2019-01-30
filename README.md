@@ -1,6 +1,9 @@
 # COMPEST
 An interface connecting COMSOL Multiphysics and PEST to solve inverse modelling problems using forward finite element models. 
 
+![COMPEST is an interface between PEST and COMSOL Multiphysics](extras/COMPEST_interface_diagram.png)
+
+
 ## The paper
 Halloran et al. (2019), _Computers and Geosciences_. 
 
