@@ -1,0 +1,14 @@
+% Model,EXAMPLE002.mph
+% Version,COMSOL 5.3.0.223
+% Date,"Oct 15 2018, 16:58"
+% Dimension,1
+% Nodes,6
+% Expressions,1
+% Description,Point graph
+% X,Height
+0,-20.96691485276059
+5,-13.260206673920027
+10,-6.492343023554836
+0,-20.94087909289344
+5,-13.488720293567514
+10,-6.669471391416049

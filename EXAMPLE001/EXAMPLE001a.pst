@@ -1,0 +1,41 @@
+pcf
+* control data
+restart  estimation
+    1    12     1     0     2
+    1     2 double point   1   0   0
+  5.0   2.0   0.3  0.03    10
+  3.0   3.0 0.001  0
+  0.1
+   50  0.01     3     3  0.01     3
+    1     1     1
+* singular value decomposition
+1
+10 5E-7
+1
+* parameter groups
+R       relative 0.001  0.0  switch  2.0 parabolic
+* parameter data
+R_P       log  factor   1.000E-3  1.0000000E-5   1.000000E+2 R          1.0000        0.0000      1
+* observation groups
+conc
+delta
+* observation data
+ pcez2t0         2.292947521081789E-5      0      conc
+ pcez2t5         0.0548300958534666        0      conc
+ pcez2t10        0.01525985109268163       0      conc
+ pcez5t0         0.00					   0      conc
+ pcez5t5         0.03645381548411138       0      conc
+ pcez5t10        0.01343228069738478       0      conc
+ deltacpcez2t0   -0.2925192338438798      6.328180E-02  delta
+ deltacpcez2t5   10.104429924529645       6.328180E-02  delta
+ deltacpcez2t10  20.44681240339341        6.328180E-02  delta
+ deltacpcez5t0   -0.28414182204350436     6.328180E-02  delta
+ deltacpcez5t5   9.820945604418485        6.328180E-02  delta
+ deltacpcez5t10  20.120822205116127       6.328180E-02  delta
+* model command line
+modelcommands
+* model input/output
+EXAMPLE001.tpl  EXAMPLE001.inp
+EXAMPLE001PCE.ins  PCE001.dat
+EXAMPLE001deltaCPCE.ins  deltaC_PCE001.dat
+* prior information

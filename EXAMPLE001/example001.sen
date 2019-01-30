@@ -1,0 +1,67 @@
+                     PARAMETER SENSITIVITIES: CASE example001
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               1.000000E-03     1.431283E-02
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               3.000000E-03     4.142188E-02
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               9.000000E-03     0.113102    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               2.700000E-02     0.261141    
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               8.100000E-02     0.456384    
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100869         0.512346    
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100025         0.509703    
+
+
+ OPTIMISATION ITERATION NO.  8 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.509626    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "conc" ----->
+
+ Number of observations with non-zero weight =     6
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.619280    
+
+
+
+ Composite sensitivities for observation group "delta" ----->
+
+ Number of observations with non-zero weight =     6
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.809548    
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    12
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.509626    

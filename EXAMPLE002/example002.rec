@@ -1,0 +1,1029 @@
+
+                    PEST RUN RECORD: CASE example002
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    10
+   Number of adjustable parameters                :    10
+   Number of parameter groups                     :     3
+   Number of observations                         :    54
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   modelcommands
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      EXAMPLE002.tpl
+   for model input files:
+      EXAMPLE002.inp
+
+   (Parameter values written using double precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      EXAMPLE002PCE.ins
+      EXAMPLE002deltaCPCE.ins
+      EXAMPLE002deltaClPCE.ins
+      EXAMPLE002TCE.ins
+      EXAMPLE002deltaCTCE.ins
+      EXAMPLE002deltaClTCE.ins
+      EXAMPLE002DCE.ins
+      EXAMPLE002deltaCDCE.ins
+      EXAMPLE002deltaClDCE.ins
+   for reading model output files:
+      PCE002.dat
+      deltaC_PCE002.dat
+      deltaCl_PCE002.dat
+      TCE002.dat
+      deltaC_TCE002.dat
+      deltaCl_TCE002.dat
+      DCE002.dat
+      deltaC_DCE002.dat
+      deltaCl_DCE002.dat
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 10
+   Ratio of lowest/highest singular value        :  5.000000E-07
+   Record eigenvectors in SVD file               : yes
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+r            relative    1.0000E-03   none         switch       2.000     parabolic
+d            relative    1.0000E-03   none         switch       2.000     parabolic
+a            relative    1.0000E-03   none         switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+r_p          log               factor     1.000000E-03   1.000000E-05    100.000    
+r_t          log               factor     1.000000E-03   1.000000E-05    100.000    
+r_d          log               factor     1.000000E-03   1.000000E-05    100.000    
+dp           log               factor     1.000000E-09   1.000000E-12   1.000000E-07
+dt           log               factor     1.000000E-09   1.000000E-12   1.000000E-07
+dd           log               factor     1.000000E-09   1.000000E-12   1.000000E-07
+acp          none              factor      1.00000        1.00000        1.05700    
+aclp         none              factor      1.00000        1.00000        1.01300    
+acs          none              factor      1.00000        1.00000        1.02850    
+acls         none              factor      1.00000        1.00000        1.00650    
+
+Name         Group          Scale         Offset        Model command number
+r_p          r             1.00000        0.00000            1
+r_t          r             1.00000        0.00000            1
+r_d          r             1.00000        0.00000            1
+dp           d             1.00000        0.00000            1
+dt           d             1.00000        0.00000            1
+dd           d             1.00000        0.00000            1
+acp          a             1.00000        0.00000            1
+aclp         a             1.00000        0.00000            1
+acs          a             1.00000        0.00000            1
+acls         a             1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ pcez2t0                2.292948E-05      21.97       conc        
+ pcez2t5                5.495767E-02      21.97       conc        
+ pcez2t10               1.529326E-02      21.97       conc        
+ pcez5t0                 0.00000          21.97       conc        
+ pcez5t5                3.637762E-02      21.97       conc        
+ pcez5t10               1.344433E-02      21.97       conc        
+ deltacpcez2t0         -0.292516         7.3521E-02   deltac      
+ deltacpcez2t5           10.5782         7.3521E-02   deltac      
+ deltacpcez2t10          21.4461         7.3521E-02   deltac      
+ deltacpcez5t0         -0.284139         7.3521E-02   deltac      
+ deltacpcez5t5           10.3285         7.3521E-02   deltac      
+ deltacpcez5t10          21.1269         7.3521E-02   deltac      
+ deltaclpcez2t0          12.3585         2.4714E-03   deltacl     
+ deltaclpcez2t5          14.9146         2.4714E-03   deltacl     
+ deltaclpcez2t10         16.6158         2.4714E-03   deltacl     
+ deltaclpcez5t0          12.3759         2.4714E-03   deltacl     
+ deltaclpcez5t5          14.6058         2.4714E-03   deltacl     
+ deltaclpcez5t10         16.3897         2.4714E-03   deltacl     
+ tcez2t0                 0.00000          21.97       conc        
+ tcez2t5                6.418429E-02      21.97       conc        
+ tcez2t10               4.318093E-02      21.97       conc        
+ tcez5t0                 0.00000          21.97       conc        
+ tcez5t5                4.279298E-02      21.97       conc        
+ tcez5t10               3.795804E-02      21.97       conc        
+ deltactcez2t0          -10.5748         7.3521E-02   deltac      
+ deltactcez2t5          -1.68260         7.3521E-02   deltac      
+ deltactcez2t10          6.78219         7.3521E-02   deltac      
+ deltactcez5t0          -10.5638         7.3521E-02   deltac      
+ deltactcez5t5          -1.85076         7.3521E-02   deltac      
+ deltactcez5t10          6.60718         7.3521E-02   deltac      
+ deltacltcez2t0         -1.11499         2.4714E-03   deltacl     
+ deltacltcez2t5          1.23178         2.4714E-03   deltacl     
+ deltacltcez2t10         2.65220         2.4714E-03   deltacl     
+ deltacltcez5t0         -1.08978         2.4714E-03   deltacl     
+ deltacltcez5t5         0.930583         2.4714E-03   deltacl     
+ deltacltcez5t10         2.44771         2.4714E-03   deltacl     
+ dcez2t0                 0.00000          21.97       conc        
+ dcez2t5                2.445719E-02      21.97       conc        
+ dcez2t10               3.812905E-02      21.97       conc        
+ dcez5t0                 0.00000          21.97       conc        
+ dcez5t5                1.666388E-02      21.97       conc        
+ dcez5t10               3.389258E-02      21.97       conc        
+ deltacdcez2t0          -20.9669         7.3521E-02   deltac      
+ deltacdcez2t5          -13.2602         7.3521E-02   deltac      
+ deltacdcez2t10         -6.49234         7.3521E-02   deltac      
+ deltacdcez5t0          -20.9409         7.3521E-02   deltac      
+ deltacdcez5t5          -13.4887         7.3521E-02   deltac      
+ deltacdcez5t10         -6.66947         7.3521E-02   deltac      
+ deltacldcez2t0         -999.539          0.000       deltacl     
+ deltacldcez2t5         -9.80476         2.4714E-03   deltacl     
+ deltacldcez2t10        0.449133         2.4714E-03   deltacl     
+ deltacldcez5t0         -999.546          0.000       deltacl     
+ deltacldcez5t5         -9.92587         2.4714E-03   deltacl     
+ deltacldcez5t10        0.229356         2.4714E-03   deltacl     
+
+
+Control settings:-
+
+   Initial lambda                                               :  5.0000    
+   Lambda adjustment factor                                     :  2.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+
+   Maximum  factor  parameter change (factor-limited changes)   :  3.0000
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.10000E-01
+   Number of phi values required within this range              :   3
+   Maximum number of consecutive failures to lower phi          :   3
+   Minimal relative parameter change indicating convergence     : 0.10000E-01
+   Number of consecutive iterations with minimal param change   :   3
+   Maximum number of optimisation iterations                    :  50
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   39.438    
+   Contribution to phi from observation group "conc"        =   19.436    
+   Contribution to phi from observation group "deltac"      =   14.691    
+   Contribution to phi from observation group "deltacl"     =   5.3112    
+
+      Current parameter values
+      r_p             1.000000E-03
+      r_t             1.000000E-03
+      r_d             1.000000E-03
+      dp              1.000000E-09
+      dt              1.000000E-09
+      dd              1.000000E-09
+      acp              1.00000    
+      aclp             1.00000    
+      acs              1.00000    
+      acls             1.00000    
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   39.438    
+   Contribution to phi from observation group "conc"        :   19.436    
+   Contribution to phi from observation group "deltac"      :   14.691    
+   Contribution to phi from observation group "deltacl"     :   5.3112    
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+
+       Lambda =   5.0000     ----->
+          Phi =   36.909      (  0.936 of starting phi)
+
+       Lambda =   2.5000     ----->
+          Phi =   36.922      (  0.936 of starting phi)
+
+       Lambda =   10.000     ----->
+          Phi =   36.884      (  0.935 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   36.884    
+   Relative phi reduction between optimisation iterations less than 0.1000
+   Switch to central derivatives calculation
+
+      Current parameter values                 Previous parameter values
+      r_p             3.000000E-03             r_p              1.000000E-03
+      r_t             1.071111E-03             r_t              1.000000E-03
+      r_d             9.993970E-04             r_d              1.000000E-03
+      dp              1.026603E-09             dp               1.000000E-09
+      dt              9.239030E-10             dt               1.000000E-09
+      dd              1.022822E-09             dd               1.000000E-09
+      acp              1.00021                 acp               1.00000    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00021                 acs               1.00000    
+      acls             1.00031                 acls              1.00000    
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 14
+   Starting phi for this iteration                          :   36.884    
+   Contribution to phi from observation group "conc"        :   17.650    
+   Contribution to phi from observation group "deltac"      :   14.297    
+   Contribution to phi from observation group "deltacl"     :   4.9376    
+   All frozen parameters freed.
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+
+       Lambda =   10.000     ----->
+          Phi =   30.390      (  0.824 of starting phi)
+
+       Lambda =   5.0000     ----->
+          Phi =   30.397      (  0.824 of starting phi)
+
+       Lambda =   20.000     ----->
+          Phi =   30.377      (  0.824 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   30.377    
+
+      Current parameter values                 Previous parameter values
+      r_p             9.000000E-03             r_p              3.000000E-03
+      r_t             1.300990E-03             r_t              1.071111E-03
+      r_d             9.983536E-04             r_d              9.993970E-04
+      dp              1.105952E-09             dp               1.026603E-09
+      dt              8.298002E-10             dt               9.239030E-10
+      dd              1.095657E-09             dd               1.022822E-09
+      acp              1.00082                 acp               1.00021    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00082                 acs               1.00021    
+      acls             1.00122                 acls              1.00031    
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 3
+   Model calls so far             : 37
+   Starting phi for this iteration                          :   30.377    
+   Contribution to phi from observation group "conc"        :   13.248    
+   Contribution to phi from observation group "deltac"      :   13.175    
+   Contribution to phi from observation group "deltacl"     :   3.9538    
+   All frozen parameters freed.
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+
+       Lambda =   20.000     ----->
+          Phi =   17.804      (  0.586 of starting phi)
+
+       Lambda =   10.000     ----->
+          Phi =   17.809      (  0.586 of starting phi)
+
+       Lambda =   40.000     ----->
+          Phi =   17.795      (  0.586 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   17.795    
+
+      Current parameter values                 Previous parameter values
+      r_p             2.700000E-02             r_p              9.000000E-03
+      r_t             2.214456E-03             r_t              1.300990E-03
+      r_d             9.959713E-04             r_d              9.983536E-04
+      dp              1.389882E-09             dp               1.105952E-09
+      dt              8.741141E-10             dt               8.298002E-10
+      dd              9.473649E-10             dd               1.095657E-09
+      acp              1.00266                 acp               1.00082    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00266                 acs               1.00082    
+      acls             1.00410                 acls              1.00122    
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 4
+   Model calls so far             : 60
+   Starting phi for this iteration                          :   17.795    
+   Contribution to phi from observation group "conc"        :   5.8926    
+   Contribution to phi from observation group "deltac"      :   10.006    
+   Contribution to phi from observation group "deltacl"     :   1.8965    
+   All frozen parameters freed.
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+
+       Lambda =   40.000     ----->
+          Phi =   11.400      (  0.641 of starting phi)
+
+       Lambda =   20.000     ----->
+          Phi =   11.528      (  0.648 of starting phi)
+
+       Lambda =   80.000     ----->
+          Phi =   11.152      (  0.627 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   11.152    
+
+      Current parameter values                 Previous parameter values
+      r_p             4.399782E-02             r_p              2.700000E-02
+      r_t             3.944249E-03             r_t              2.214456E-03
+      r_d             9.937212E-04             r_d              9.959713E-04
+      dp              1.562303E-09             dp               1.389882E-09
+      dt              2.622342E-09             dt               8.741141E-10
+      dd              8.207498E-10             dd               9.473649E-10
+      acp              1.00465                 acp               1.00266    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00465                 acs               1.00266    
+      acls             1.00650                 acls              1.00410    
+   Maximum   factor change:  3.000     ["dt"]
+   Maximum relative change:  2.000     ["dt"]
+
+
+OPTIMISATION ITERATION NO.        : 5
+   Model calls so far             : 83
+   Starting phi for this iteration                          :   11.152    
+   Contribution to phi from observation group "conc"        :   3.4530    
+   Contribution to phi from observation group "deltac"      :   6.9605    
+   Contribution to phi from observation group "deltacl"     :  0.73853    
+   All frozen parameters freed.
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+       parameter "acls" frozen: - update vector out of bounds
+
+       Lambda =   80.000     ----->
+          Phi =   5.3083      (  0.476 of starting phi)
+
+       Lambda =   40.000     ----->
+          Phi =   5.3180      (  0.477 of starting phi)
+
+       Lambda =   160.00     ----->
+          Phi =   5.2902      (  0.474 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   5.2902    
+
+      Current parameter values                 Previous parameter values
+      r_p             6.915979E-02             r_p              4.399782E-02
+      r_t             1.183275E-02             r_t              3.944249E-03
+      r_d             9.888697E-04             r_d              9.937212E-04
+      dp              1.603342E-09             dp               1.562303E-09
+      dt              1.900859E-09             dt               2.622342E-09
+      dd              7.930231E-10             dd               8.207498E-10
+      acp              1.00721                 acp               1.00465    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00721                 acs               1.00465    
+      acls             1.00650                 acls              1.00650    
+   Maximum   factor change:  3.000     ["r_t"]
+   Maximum relative change:  2.000     ["r_t"]
+
+
+OPTIMISATION ITERATION NO.        : 6
+   Model calls so far             : 106
+   Starting phi for this iteration                          :   5.2902    
+   Contribution to phi from observation group "conc"        :   1.8218    
+   Contribution to phi from observation group "deltac"      :   3.3722    
+   Contribution to phi from observation group "deltacl"     :  9.62508E-02
+   All frozen parameters freed.
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+       parameter "acls" frozen: - update vector out of bounds
+
+       Lambda =   160.00     ----->
+          Phi =   2.1423      (  0.405 of starting phi)
+
+       Lambda =   80.000     ----->
+          Phi =   2.1353      (  0.404 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   2.1353    
+
+      Current parameter values                 Previous parameter values
+      r_p             8.302565E-02             r_p              6.915979E-02
+      r_t             3.549824E-02             r_t              1.183275E-02
+      r_d             9.872727E-04             r_d              9.888697E-04
+      dp              1.208791E-09             dp               1.603342E-09
+      dt              2.432607E-09             dt               1.900859E-09
+      dd              7.747181E-10             dd               7.930231E-10
+      acp              1.00797                 acp               1.00721    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00797                 acs               1.00721    
+      acls             1.00650                 acls              1.00650    
+   Maximum   factor change:  3.000     ["r_t"]
+   Maximum relative change:  2.000     ["r_t"]
+
+
+OPTIMISATION ITERATION NO.        : 7
+   Model calls so far             : 128
+   Starting phi for this iteration                          :   2.1353    
+   Contribution to phi from observation group "conc"        :  0.41363    
+   Contribution to phi from observation group "deltac"      :   1.7112    
+   Contribution to phi from observation group "deltacl"     :  1.04546E-02
+   All frozen parameters freed.
+       parameter "aclp" frozen: gradient and update vectors out of bounds
+
+       Lambda =   40.000     ----->
+          Phi =  0.76303      (  0.357 of starting phi)
+
+       Lambda =   20.000     ----->
+          Phi =  0.49073      (  0.230 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  0.49073    
+
+      Current parameter values                 Previous parameter values
+      r_p             0.110802                 r_p              8.302565E-02
+      r_t             6.798071E-02             r_t              3.549824E-02
+      r_d             9.852425E-04             r_d              9.872727E-04
+      dp              7.382989E-10             dp               1.208791E-09
+      dt              2.242875E-09             dt               2.432607E-09
+      dd              7.598263E-10             dd               7.747181E-10
+      acp              1.00957                 acp               1.00797    
+      aclp             1.00000                 aclp              1.00000    
+      acs              1.00957                 acs               1.00797    
+      acls             1.00241                 acls              1.00650    
+   Maximum   factor change:  1.915     ["r_t"]
+   Maximum relative change: 0.9150     ["r_t"]
+
+
+OPTIMISATION ITERATION NO.        : 8
+   Model calls so far             : 150
+   Starting phi for this iteration                          :  0.49073    
+   Contribution to phi from observation group "conc"        :  0.33834    
+   Contribution to phi from observation group "deltac"      :  0.15213    
+   Contribution to phi from observation group "deltacl"     :  2.49479E-04
+   All frozen parameters freed.
+
+       Lambda =   10.000     ----->
+          Phi =  0.35843      (  0.730 of starting phi)
+
+       Lambda =   5.0000     ----->
+          Phi =  0.36408      (  0.742 of starting phi)
+
+       Lambda =   20.000     ----->
+          Phi =  0.34869      (  0.711 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:  0.34869    
+
+      Current parameter values                 Previous parameter values
+      r_p             0.108630                 r_p              0.110802    
+      r_t             6.488593E-02             r_t              6.798071E-02
+      r_d             1.073746E-03             r_d              9.852425E-04
+      dp              7.227064E-10             dp               7.382989E-10
+      dt              1.882734E-09             dt               2.242875E-09
+      dd              2.279479E-09             dd               7.598263E-10
+      acp              1.00963                 acp               1.00957    
+      aclp             1.00286                 aclp              1.00000    
+      acs              1.00963                 acs               1.00957    
+      acls             1.00130                 acls              1.00241    
+   Maximum   factor change:  3.000     ["dd"]
+   Maximum relative change:  2.000     ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 9
+   Model calls so far             : 173
+   Starting phi for this iteration                          :  0.34869    
+   Contribution to phi from observation group "conc"        :  0.19534    
+   Contribution to phi from observation group "deltac"      :  0.15329    
+   Contribution to phi from observation group "deltacl"     :  5.29716E-05
+
+       Lambda =   20.000     ----->
+          Phi =  0.32160      (  0.922 of starting phi)
+
+       Lambda =   10.000     ----->
+          Phi =  0.32245      (  0.925 of starting phi)
+
+       Lambda =   40.000     ----->
+          Phi =  0.30127      (  0.864 of starting phi)
+
+       Lambda =   80.000     ----->
+          Phi =  0.31463      (  0.902 of starting phi)
+
+   No more lambdas: phi rising
+   Lowest phi this iteration:  0.30127    
+
+      Current parameter values                 Previous parameter values
+      r_p             0.106204                 r_p              0.108630    
+      r_t             6.052073E-02             r_t              6.488593E-02
+      r_d             2.485171E-03             r_d              1.073746E-03
+      dp              7.046766E-10             dp               7.227064E-10
+      dt              1.618145E-09             dt               1.882734E-09
+      dd              3.780594E-09             dd               2.279479E-09
+      acp              1.00964                 acp               1.00963    
+      aclp             1.00631                 aclp              1.00286    
+      acs              1.00964                 acs               1.00963    
+      acls             1.00017                 acls              1.00130    
+   Maximum   factor change:  2.314     ["r_d"]
+   Maximum relative change:  1.314     ["r_d"]
+
+
+OPTIMISATION ITERATION NO.        : 10
+   Model calls so far             : 197
+   Starting phi for this iteration                          :  0.30127    
+   Contribution to phi from observation group "conc"        :  0.12739    
+   Contribution to phi from observation group "deltac"      :  0.17383    
+   Contribution to phi from observation group "deltacl"     :  4.81965E-05
+
+       Lambda =   40.000     ----->
+          Phi =  0.29340      (  0.974 of starting phi)
+
+       Lambda =   20.000     ----->
+          Phi =  0.28875      (  0.958 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:  0.28875    
+
+      Current parameter values                 Previous parameter values
+      r_p             0.105769                 r_p              0.106204    
+      r_t             6.122515E-02             r_t              6.052073E-02
+      r_d             3.033206E-03             r_d              2.485171E-03
+      dp              7.407760E-10             dp               7.046766E-10
+      dt              1.569356E-09             dt               1.618145E-09
+      dd              3.745125E-09             dd               3.780594E-09
+      acp              1.00966                 acp               1.00964    
+      aclp             1.00573                 aclp              1.00631    
+      acs              1.00966                 acs               1.00964    
+      acls             1.00020                 acls              1.00017    
+   Maximum   factor change:  1.221     ["r_d"]
+   Maximum relative change: 0.2205     ["r_d"]
+
+
+OPTIMISATION ITERATION NO.        : 11
+   Model calls so far             : 219
+   Starting phi for this iteration                          :  0.28875    
+   Contribution to phi from observation group "conc"        :  0.12171    
+   Contribution to phi from observation group "deltac"      :  0.16700    
+   Contribution to phi from observation group "deltacl"     :  3.88906E-05
+
+       Lambda =   10.000     ----->
+          Phi =  0.20012      (  0.693 of starting phi)
+
+       Lambda =   5.0000     ----->
+          Phi =  0.20124      (  0.697 of starting phi)
+
+       Lambda =   20.000     ----->
+          Phi =  0.20242      (  0.701 of starting phi)
+
+   No more lambdas: phi rising
+   Lowest phi this iteration:  0.20012    
+
+      Current parameter values                 Previous parameter values
+      r_p             0.104564                 r_p              0.105769    
+      r_t             6.341920E-02             r_t              6.122515E-02
+      r_d             9.099619E-03             r_d              3.033206E-03
+      dp              8.453375E-10             dp               7.407760E-10
+      dt              1.404386E-09             dt               1.569356E-09
+      dd              3.572674E-09             dd               3.745125E-09
+      acp              1.00976                 acp               1.00966    
+      aclp             1.00429                 aclp              1.00573    
+      acs              1.00976                 acs               1.00966    
+      acls             1.00031                 acls              1.00020    
+   Maximum   factor change:  3.000     ["r_d"]
+   Maximum relative change:  2.000     ["r_d"]
+
+
+OPTIMISATION ITERATION NO.        : 12
+   Model calls so far             : 242
+   Starting phi for this iteration                          :  0.20012    
+   Contribution to phi from observation group "conc"        :  8.39110E-02
+   Contribution to phi from observation group "deltac"      :  0.11617    
+   Contribution to phi from observation group "deltacl"     :  3.83235E-05
+
+       Lambda =   10.000     ----->
+          Phi =  4.54704E-02  (  0.227 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  4.54704E-02
+
+      Current parameter values                 Previous parameter values
+      r_p             0.103240                 r_p              0.104564    
+      r_t             6.626638E-02             r_t              6.341920E-02
+      r_d             2.729886E-02             r_d              9.099619E-03
+      dp              8.466584E-10             dp               8.453375E-10
+      dt              1.263015E-09             dt               1.404386E-09
+      dd              3.393339E-09             dd               3.572674E-09
+      acp              1.01000                 acp               1.00976    
+      aclp             1.00389                 aclp              1.00429    
+      acs              1.01000                 acs               1.00976    
+      acls             1.00030                 acls              1.00031    
+   Maximum   factor change:  3.000     ["r_d"]
+   Maximum relative change:  2.000     ["r_d"]
+
+
+OPTIMISATION ITERATION NO.        : 13
+   Model calls so far             : 263
+   Starting phi for this iteration                          :  4.54704E-02
+   Contribution to phi from observation group "conc"        :  2.05181E-02
+   Contribution to phi from observation group "deltac"      :  2.48981E-02
+   Contribution to phi from observation group "deltacl"     :  5.42135E-05
+
+       Lambda =   5.0000     ----->
+          Phi =  1.68745E-02  (  0.371 of starting phi)
+
+       Lambda =   2.5000     ----->
+          Phi =  1.58063E-02  (  0.348 of starting phi)
+
+       Lambda =   1.2500     ----->
+          Phi =  1.38177E-02  (  0.304 of starting phi)
+
+       Lambda =  0.62500     ----->
+          Phi =  1.13155E-02  (  0.249 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  1.13155E-02
+
+      Current parameter values                 Previous parameter values
+      r_p             0.101632                 r_p              0.103240    
+      r_t             6.786809E-02             r_t              6.626638E-02
+      r_d             3.599618E-02             r_d              2.729886E-02
+      dp              8.912700E-10             dp               8.466584E-10
+      dt              1.114981E-09             dt               1.263015E-09
+      dd              2.288754E-09             dd               3.393339E-09
+      acp              1.01019                 acp               1.01000    
+      aclp             1.00449                 aclp              1.00389    
+      acs              1.01019                 acs               1.01000    
+      acls             1.00038                 acls              1.00030    
+   Maximum   factor change:  1.483     ["dd"]
+   Maximum relative change: 0.3255     ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 14
+   Model calls so far             : 287
+   Starting phi for this iteration                          :  1.13155E-02
+   Contribution to phi from observation group "conc"        :  5.78120E-03
+   Contribution to phi from observation group "deltac"      :  5.51532E-03
+   Contribution to phi from observation group "deltacl"     :  1.89815E-05
+
+       Lambda =  0.31250     ----->
+          Phi =  2.62420E-04  (  0.023 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  2.62420E-04
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100021                 r_p              0.101632    
+      r_t             6.889022E-02             r_t              6.786809E-02
+      r_d             4.491307E-02             r_d              3.599618E-02
+      dp              9.411274E-10             dp               8.912700E-10
+      dt              9.894207E-10             dt               1.114981E-09
+      dd              1.283640E-09             dd               2.288754E-09
+      acp              1.01042                 acp               1.01019    
+      aclp             1.00504                 aclp              1.00449    
+      acs              1.01042                 acs               1.01019    
+      acls             1.00051                 acls              1.00038    
+   Maximum   factor change:  1.783     ["dd"]
+   Maximum relative change: 0.4392     ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 15
+   Model calls so far             : 308
+   Starting phi for this iteration                          :  2.62420E-04
+   Contribution to phi from observation group "conc"        :  1.67512E-04
+   Contribution to phi from observation group "deltac"      :  9.43681E-05
+   Contribution to phi from observation group "deltacl"     :  5.40143E-07
+
+       Lambda =  0.15625     ----->
+          Phi =  1.01755E-05  (  0.039 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  1.01755E-05
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100005                 r_p              0.100021    
+      r_t             6.852806E-02             r_t              6.889022E-02
+      r_d             4.454148E-02             r_d              4.491307E-02
+      dp              9.401152E-10             dp               9.411274E-10
+      dt              1.005414E-09             dt               9.894207E-10
+      dd              1.168929E-09             dd               1.283640E-09
+      acp              1.01041                 acp               1.01042    
+      aclp             1.00500                 aclp              1.00504    
+      acs              1.01041                 acs               1.01042    
+      acls             1.00050                 acls              1.00051    
+   Maximum   factor change:  1.098     ["dd"]
+   Maximum relative change: 8.9364E-02 ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 16
+   Model calls so far             : 329
+   Starting phi for this iteration                          :  1.01755E-05
+   Contribution to phi from observation group "conc"        :  8.81958E-06
+   Contribution to phi from observation group "deltac"      :  1.32174E-06
+   Contribution to phi from observation group "deltacl"     :  3.41971E-08
+
+       Lambda =  7.81250E-02 ----->
+          Phi =  9.90533E-09  (  0.001 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  9.90533E-09
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100000                 r_p              0.100005    
+      r_t             6.845114E-02             r_t              6.852806E-02
+      r_d             4.463425E-02             r_d              4.454148E-02
+      dp              9.399802E-10             dp               9.401152E-10
+      dt              1.010022E-09             dt               1.005414E-09
+      dd              1.130318E-09             dd               1.168929E-09
+      acp              1.01041                 acp               1.01041    
+      aclp             1.00500                 aclp              1.00500    
+      acs              1.01041                 acs               1.01041    
+      acls             1.00050                 acls              1.00050    
+   Maximum   factor change:  1.034     ["dd"]
+   Maximum relative change: 3.3031E-02 ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 17
+   Model calls so far             : 350
+   Starting phi for this iteration                          :  9.90533E-09
+   Contribution to phi from observation group "conc"        :  2.95974E-09
+   Contribution to phi from observation group "deltac"      :  6.93948E-09
+   Contribution to phi from observation group "deltacl"     :  6.11682E-12
+
+       Lambda =  3.90625E-02 ----->
+          Phi =  1.98777E-11  (  0.002 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  1.98777E-11
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100000                 r_p              0.100000    
+      r_t             6.845230E-02             r_t              6.845114E-02
+      r_d             4.464254E-02             r_d              4.463425E-02
+      dp              9.399966E-10             dp               9.399802E-10
+      dt              1.010007E-09             dt               1.010022E-09
+      dd              1.130022E-09             dd               1.130318E-09
+      acp              1.01041                 acp               1.01041    
+      aclp             1.00500                 aclp              1.00500    
+      acs              1.01041                 acs               1.01041    
+      acls             1.00050                 acls              1.00050    
+   Maximum   factor change:  1.000     ["dd"]
+   Maximum relative change: 2.6178E-04 ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 18
+   Model calls so far             : 371
+   Starting phi for this iteration                          :  1.98777E-11
+   Contribution to phi from observation group "conc"        :  9.93622E-12
+   Contribution to phi from observation group "deltac"      :  9.93146E-12
+   Contribution to phi from observation group "deltacl"     :  1.00375E-14
+
+       Lambda =  1.95313E-02 ----->
+          Phi =  1.39571E-11  (  0.702 of starting phi)
+
+       Lambda =  9.76563E-03 ----->
+          Phi =  1.39558E-11  (  0.702 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:  1.39558E-11
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100000                 r_p              0.100000    
+      r_t             6.845228E-02             r_t              6.845230E-02
+      r_d             4.464274E-02             r_d              4.464254E-02
+      dp              9.399970E-10             dp               9.399966E-10
+      dt              1.010009E-09             dt               1.010007E-09
+      dd              1.129996E-09             dd               1.130022E-09
+      acp              1.01041                 acp               1.01041    
+      aclp             1.00500                 aclp              1.00500    
+      acs              1.01041                 acs               1.01041    
+      acls             1.00050                 acls              1.00050    
+   Maximum   factor change:  1.000     ["dd"]
+   Maximum relative change: 2.2920E-05 ["dd"]
+
+
+OPTIMISATION ITERATION NO.        : 19
+   Model calls so far             : 393
+   Starting phi for this iteration                          :  1.39558E-11
+   Contribution to phi from observation group "conc"        :  5.41542E-12
+   Contribution to phi from observation group "deltac"      :  8.53870E-12
+   Contribution to phi from observation group "deltacl"     :  1.71249E-15
+
+       Lambda =  4.88281E-03 ----->
+          Phi =  1.39557E-11  (  1.000 of starting phi)
+
+       Lambda =  2.44141E-03 ----->
+          Phi =  1.39557E-11  (  1.000 of starting phi)
+
+       Lambda =  9.76563E-03 ----->
+          Phi =  1.39557E-11  (  1.000 of starting phi)
+
+   No more lambdas: phi rising
+   Lowest phi this iteration:  1.39557E-11
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100000                 r_p              0.100000    
+      r_t             6.845228E-02             r_t              6.845228E-02
+      r_d             4.464274E-02             r_d              4.464274E-02
+      dp              9.399970E-10             dp               9.399970E-10
+      dt              1.010009E-09             dt               1.010009E-09
+      dd              1.129996E-09             dd               1.129996E-09
+      acp              1.01041                 acp               1.01041    
+      aclp             1.00500                 aclp              1.00500    
+      acs              1.01041                 acs               1.01041    
+      acls             1.00050                 acls              1.00050    
+   Maximum   factor change:  1.000     ["dd"]
+   Maximum relative change: 1.7699E-07 ["dd"]
+
+   Optimisation complete: relative parameter change less than 1.0000E-02
+                          over  3 successive iterations.
+   Total model calls:    416
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ r_p            0.100000    
+ r_t            6.845228E-02
+ r_d            4.464274E-02
+ dp             9.399970E-10
+ dt             1.010009E-09
+ dd             1.129996E-09
+ acp             1.01041    
+ aclp            1.00500    
+ acs             1.01041    
+ acls            1.00050    
+
+See file example002.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+pcez2t0               2.292948E-05   2.292940E-05   7.337799E-11    21.97      conc        
+pcez2t5               5.495767E-02   5.495768E-02  -6.119336E-09    21.97      conc        
+pcez2t10              1.529326E-02   1.529324E-02   2.400666E-08    21.97      conc        
+pcez5t0                0.00000      -1.586882E-10   1.586882E-10    21.97      conc        
+pcez5t5               3.637762E-02   3.637757E-02   5.251163E-08    21.97      conc        
+pcez5t10              1.344433E-02   1.344429E-02   3.338869E-08    21.97      conc        
+deltacpcez2t0        -0.292516      -0.292516       1.215304E-09   7.3521E-02  deltac      
+deltacpcez2t5          10.5782        10.5782      -3.627202E-06   7.3521E-02  deltac      
+deltacpcez2t10         21.4461        21.4461       1.439909E-05   7.3521E-02  deltac      
+deltacpcez5t0        -0.284139      -0.284139       4.614188E-08   7.3521E-02  deltac      
+deltacpcez5t5          10.3285        10.3285      -2.389594E-06   7.3521E-02  deltac      
+deltacpcez5t10         21.1269        21.1268       1.823394E-05   7.3521E-02  deltac      
+deltaclpcez2t0         12.3585        12.3585      -1.537090E-06   2.4714E-03  deltacl     
+deltaclpcez2t5         14.9146        14.9146      -4.374169E-06   2.4714E-03  deltacl     
+deltaclpcez2t10        16.6158        16.6158       2.574261E-06   2.4714E-03  deltacl     
+deltaclpcez5t0         12.3759        12.3759      -2.787288E-06   2.4714E-03  deltacl     
+deltaclpcez5t5         14.6058        14.6058       2.122831E-06   2.4714E-03  deltacl     
+deltaclpcez5t10        16.3897        16.3897      -2.806711E-06   2.4714E-03  deltacl     
+tcez2t0                0.00000       1.352304E-10  -1.352304E-10    21.97      conc        
+tcez2t5               6.418429E-02   6.418429E-02   3.314251E-09    21.97      conc        
+tcez2t10              4.318093E-02   4.318094E-02  -1.263035E-08    21.97      conc        
+tcez5t0                0.00000      -9.247913E-16   9.247913E-16    21.97      conc        
+tcez5t5               4.279298E-02   4.279303E-02  -5.919431E-08    21.97      conc        
+tcez5t10              3.795804E-02   3.795808E-02  -4.981261E-08    21.97      conc        
+deltactcez2t0         -10.5748       -10.5748      -1.492338E-06   7.3521E-02  deltac      
+deltactcez2t5         -1.68260       -1.68259      -1.099904E-05   7.3521E-02  deltac      
+deltactcez2t10         6.78219        6.78219      -3.803473E-06   7.3521E-02  deltac      
+deltactcez5t0         -10.5638       -10.5638      -2.637920E-06   7.3521E-02  deltac      
+deltactcez5t5         -1.85076       -1.85075      -9.690192E-06   7.3521E-02  deltac      
+deltactcez5t10         6.60718        6.60718      -2.167469E-06   7.3521E-02  deltac      
+deltacltcez2t0        -1.11499       -1.11498      -2.215004E-06   2.4714E-03  deltacl     
+deltacltcez2t5         1.23178        1.23179      -9.053317E-07   2.4714E-03  deltacl     
+deltacltcez2t10        2.65220        2.65220       2.926434E-06   2.4714E-03  deltacl     
+deltacltcez5t0        -1.08978       -1.08978      -1.869090E-06   2.4714E-03  deltacl     
+deltacltcez5t5        0.930583       0.930584      -8.322651E-07   2.4714E-03  deltacl     
+deltacltcez5t10        2.44771        2.44770       1.648538E-06   2.4714E-03  deltacl     
+dcez2t0                0.00000       3.781575E-16  -3.781575E-16    21.97      conc        
+dcez2t5               2.445719E-02   2.445719E-02   2.757233E-09    21.97      conc        
+dcez2t10              3.812905E-02   3.812907E-02  -1.626281E-08    21.97      conc        
+dcez5t0                0.00000      -2.551419E-21   2.551419E-21    21.97      conc        
+dcez5t5               1.666388E-02   1.666388E-02  -1.561445E-09    21.97      conc        
+dcez5t10              3.389258E-02   3.389260E-02  -1.940084E-08    21.97      conc        
+deltacdcez2t0         -20.9669       -20.9669       2.167731E-05   7.3521E-02  deltac      
+deltacdcez2t5         -13.2602       -13.2602      -3.275112E-06   7.3521E-02  deltac      
+deltacdcez2t10        -6.49234       -6.49234      -4.458129E-06   7.3521E-02  deltac      
+deltacdcez5t0         -20.9409       -20.9409       1.592974E-05   7.3521E-02  deltac      
+deltacdcez5t5         -13.4887       -13.4887       4.900379E-07   7.3521E-02  deltac      
+deltacdcez5t10        -6.66947       -6.66947      -4.130625E-06   7.3521E-02  deltac      
+deltacldcez2t0        -999.539       -999.539       2.039936E-05    0.000      deltacl     
+deltacldcez2t5        -9.80476       -9.80475      -6.067284E-06   2.4714E-03  deltacl     
+deltacldcez2t10       0.449133       0.449138      -5.321920E-06   2.4714E-03  deltacl     
+deltacldcez5t0        -999.546       -999.546      -1.923018E-05    0.000      deltacl     
+deltacldcez5t5        -9.92587       -9.92588       1.242264E-05   2.4714E-03  deltacl     
+deltacldcez5t10       0.229356       0.229355       5.284909E-07   2.4714E-03  deltacl     
+
+See file example002.res for more details of residuals in graph-ready format.
+
+See file example002.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =  1.3956E-11
+  Contribution to phi from observation group "conc"         =  5.4486E-12
+  Contribution to phi from observation group "deltac"       =  8.5053E-12
+  Contribution to phi from observation group "deltacl"      =  1.7664E-15
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =   1.000    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    52
+     Mean value of non-zero weighted residuals                      =  1.0288E-08
+     Maximum weighted residual [observation "deltacdcez2t0"]        =  1.5937E-06
+     Minimum weighted residual [observation "tcez5t5"]              = -1.3002E-06
+     Standard variance of weighted residuals                        =  3.3228E-13
+     Standard error of weighted residuals                           =  5.7644E-07
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "conc":-
+     Number of residuals with non-zero weight                       =    18
+     Mean value of non-zero weighted residuals                      = -5.9681E-08
+     Maximum weighted residual [observation "pcez5t5"]              =  1.1534E-06
+     Minimum weighted residual [observation "tcez5t5"]              = -1.3002E-06
+     "Variance" of weighted residuals                               =  3.0270E-13
+     "Standard error" of weighted residuals                         =  5.5018E-07
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "deltac":-
+     Number of residuals with non-zero weight                       =    18
+     Mean value of non-zero weighted residuals                      =  9.0294E-08
+     Maximum weighted residual [observation "deltacdcez2t0"]        =  1.5937E-06
+     Minimum weighted residual [observation "deltactcez2t5"]        = -8.0867E-07
+     "Variance" of weighted residuals                               =  4.7251E-13
+     "Standard error" of weighted residuals                         =  6.8740E-07
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "deltacl":-
+     Number of residuals with non-zero weight                       =    16
+     Mean value of non-zero weighted residuals                      = -1.0029E-09
+     Maximum weighted residual [observation "deltacldcez5t5"]       =  3.0701E-08
+     Minimum weighted residual [observation "deltacldcez2t5"]       = -1.4995E-08
+     "Variance" of weighted residuals                               =  1.1040E-16
+     "Standard error" of weighted residuals                         =  1.0507E-08
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+

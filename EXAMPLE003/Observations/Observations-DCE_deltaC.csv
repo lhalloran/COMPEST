@@ -1,0 +1,14 @@
+% Model,EXAMPLE003 - Obs Gen.mph
+% Version,COMSOL 5.3.0.223
+% Date,"Oct 17 2018, 11:54"
+% Dimension,1
+% Nodes,6
+% Expressions,1
+% Description,Point graph
+% X,Height
+0,-20.499260914987104
+5,-17.152106764028453
+10,-14.911434707537419
+0,-20.479772151099308
+5,-17.766450033055104
+10,-15.491846198264604

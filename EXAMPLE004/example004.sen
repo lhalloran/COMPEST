@@ -1,0 +1,54 @@
+                     PARAMETER SENSITIVITIES: CASE example004
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               0.100000         0.684544    
+   qheat           qheat            100.000         0.778891    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               3.720233E-02      4.59549    
+   qheat           qheat            300.000          5.33751    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               4.056023E-02      13.4636    
+   qheat           qheat            900.000          15.2010    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               4.731986E-02      12.6030    
+   qheat           qheat            940.024          14.0437    
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               4.975356E-02      12.8855    
+   qheat           qheat            997.846          14.3170    
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               4.998340E-02      11.0299    
+   qheat           qheat            999.603          14.2886    
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   k               k               4.999822E-02      11.0336    
+   qheat           qheat            999.933          14.2899    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    31
+ Parameter name    Group          Current value    Sensitivity
+   k               k               4.999980E-02      11.0336    
+   qheat           qheat            999.993          14.2899    

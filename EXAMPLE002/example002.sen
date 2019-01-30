@@ -1,0 +1,337 @@
+                     PARAMETER SENSITIVITIES: CASE example002
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               1.000000E-03     4.724827E-03
+   r_t             r               1.000000E-03     5.328050E-02
+   r_d             r               1.000000E-03     2.788037E-04
+   dp              d               1.000000E-09     6.525674E-02
+   dt              d               1.000000E-09     2.357406E-03
+   dd              d               1.000000E-09     4.498158E-03
+   acp             a                1.00000          3.84388    
+   aclp            a                1.00000         5.412275E-03
+   acs             a                1.00000          3.84388    
+   acls            a                1.00000         0.150800    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               3.000000E-03     1.367570E-02
+   r_t             r               1.071111E-03     5.299199E-02
+   r_d             r               9.993970E-04     2.752471E-04
+   dp              d               1.026603E-09     6.265953E-02
+   dt              d               9.239030E-10     2.726260E-03
+   dd              d               1.022822E-09     4.598622E-03
+   acp             a                1.00021          3.82822    
+   aclp            a                1.00000         5.621476E-03
+   acs             a                1.00021          3.82822    
+   acls            a                1.00031         0.152250    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               9.000000E-03     3.676275E-02
+   r_t             r               1.300990E-03     5.148146E-02
+   r_d             r               9.983536E-04     2.636576E-04
+   dp              d               1.105952E-09     5.484525E-02
+   dt              d               8.298002E-10     4.412736E-03
+   dd              d               1.095657E-09     4.654804E-03
+   acp             a                1.00082          3.77318    
+   aclp            a                1.00000         7.347438E-03
+   acs             a                1.00082          3.77318    
+   acls            a                1.00122         0.156382    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               2.700000E-02     7.921016E-02
+   r_t             r               2.214456E-03     4.316876E-02
+   r_d             r               9.959713E-04     2.312986E-04
+   dp              d               1.389882E-09     3.861401E-02
+   dt              d               8.741141E-10     8.640222E-03
+   dd              d               9.473649E-10     3.595152E-03
+   acp             a                1.00266          3.65481    
+   aclp            a                1.00000         1.467303E-02
+   acs             a                1.00266          3.65481    
+   acls            a                1.00410         0.169824    
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               4.399782E-02     9.479793E-02
+   r_t             r               3.944249E-03     3.135511E-02
+   r_d             r               9.937212E-04     2.309534E-04
+   dp              d               1.562303E-09     2.965935E-02
+   dt              d               2.622342E-09     5.963989E-03
+   dd              d               8.207498E-10     1.603216E-03
+   acp             a                1.00465          3.59471    
+   aclp            a                1.00000         2.164188E-02
+   acs             a                1.00465          3.59471    
+   acls            a                1.00650         0.182711    
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               6.915979E-02     0.111332    
+   r_t             r               1.183275E-02     2.405628E-02
+   r_d             r               9.888697E-04     3.199381E-04
+   dp              d               1.603342E-09     2.266075E-02
+   dt              d               1.900859E-09     1.056771E-02
+   dd              d               7.930231E-10     1.134916E-03
+   acp             a                1.00721          3.59273    
+   aclp            a                1.00000         3.364029E-02
+   acs             a                1.00721          3.59273    
+   acls            a                1.00650         0.198313    
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               8.302565E-02     0.119697    
+   r_t             r               3.549824E-02     5.110407E-02
+   r_d             r               9.872727E-04     4.856061E-04
+   dp              d               1.208791E-09     2.388942E-02
+   dt              d               2.432607E-09     1.052183E-02
+   dd              d               7.747181E-10     2.297503E-03
+   acp             a                1.00797          3.56270    
+   aclp            a                1.00000         4.477967E-02
+   acs             a                1.00797          3.56270    
+   acls            a                1.00650         0.199863    
+
+
+ OPTIMISATION ITERATION NO.  8 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.110802         0.120795    
+   r_t             r               6.798071E-02     8.375805E-02
+   r_d             r               9.852425E-04     8.222746E-04
+   dp              d               7.382989E-10     9.207170E-02
+   dt              d               2.242875E-09     1.534565E-02
+   dd              d               7.598263E-10     6.327573E-03
+   acp             a                1.00957          3.84022    
+   aclp            a                1.00000         6.516080E-02
+   acs             a                1.00957          3.84022    
+   acls            a                1.00241         0.211247    
+
+
+ OPTIMISATION ITERATION NO.  9 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.108630         0.118556    
+   r_t             r               6.488593E-02     8.044577E-02
+   r_d             r               1.073746E-03     8.340709E-04
+   dp              d               7.227064E-10     0.109746    
+   dt              d               1.882734E-09     1.571471E-02
+   dd              d               2.279479E-09     4.352749E-03
+   acp             a                1.00963          3.80540    
+   aclp            a                1.00286         6.339424E-02
+   acs             a                1.00963          3.80540    
+   acls            a                1.00130         0.212304    
+
+
+ OPTIMISATION ITERATION NO. 10 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.106204         0.155530    
+   r_t             r               6.052073E-02     7.739693E-02
+   r_d             r               2.485171E-03     1.816714E-03
+   dp              d               7.046766E-10     2.539980E-02
+   dt              d               1.618145E-09     1.706484E-02
+   dd              d               3.780594E-09     3.065490E-03
+   acp             a                1.00964          3.76448    
+   aclp            a                1.00631         6.115900E-02
+   acs             a                1.00964          3.76448    
+   acls            a                1.00017         0.211190    
+
+
+ OPTIMISATION ITERATION NO. 11 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.105769         0.155150    
+   r_t             r               6.122515E-02     7.761621E-02
+   r_d             r               3.033206E-03     2.217904E-03
+   dp              d               7.407760E-10     2.431151E-02
+   dt              d               1.569356E-09     1.681312E-02
+   dd              d               3.745125E-09     3.107607E-03
+   acp             a                1.00966          3.75614    
+   aclp            a                1.00573         6.126560E-02
+   acs             a                1.00966          3.75614    
+   acls            a                1.00020         0.210671    
+
+
+ OPTIMISATION ITERATION NO. 12 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.104564         0.153120    
+   r_t             r               6.341920E-02     7.769591E-02
+   r_d             r               9.099619E-03     6.433010E-03
+   dp              d               8.453375E-10     2.454729E-02
+   dt              d               1.404386E-09     1.615926E-02
+   dd              d               3.572674E-09     3.269470E-03
+   acp             a                1.00976          3.70691    
+   aclp            a                1.00429         6.196465E-02
+   acs             a                1.00976          3.70691    
+   acls            a                1.00031         0.207680    
+
+
+ OPTIMISATION ITERATION NO. 13 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.103240         0.154156    
+   r_t             r               6.626638E-02     7.707068E-02
+   r_d             r               2.729886E-02     1.708442E-02
+   dp              d               8.466584E-10     2.510942E-02
+   dt              d               1.263015E-09     1.618872E-02
+   dd              d               3.393339E-09     3.439552E-03
+   acp             a                1.01000          3.61789    
+   aclp            a                1.00389         6.451454E-02
+   acs             a                1.01000          3.61789    
+   acls            a                1.00030         0.202428    
+
+
+ OPTIMISATION ITERATION NO. 14 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.101632         0.154174    
+   r_t             r               6.786809E-02     7.772455E-02
+   r_d             r               3.599618E-02     2.144281E-02
+   dp              d               8.912700E-10     2.566432E-02
+   dt              d               1.114981E-09     1.602562E-02
+   dd              d               2.288754E-09     4.466743E-03
+   acp             a                1.01019          3.56311    
+   aclp            a                1.00449         6.541366E-02
+   acs             a                1.01019          3.56311    
+   acls            a                1.00038         0.199439    
+
+
+ OPTIMISATION ITERATION NO. 15 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100021         0.154318    
+   r_t             r               6.889022E-02     7.866175E-02
+   r_d             r               4.491307E-02     2.577207E-02
+   dp              d               9.411274E-10     2.668273E-02
+   dt              d               9.894207E-10     1.592079E-02
+   dd              d               1.283640E-09     5.467561E-03
+   acp             a                1.01042          3.51097    
+   aclp            a                1.00504         6.623899E-02
+   acs             a                1.01042          3.51097    
+   acls            a                1.00051         0.196731    
+
+
+ OPTIMISATION ITERATION NO. 16 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100005         0.154257    
+   r_t             r               6.852806E-02     7.854065E-02
+   r_d             r               4.454148E-02     2.567683E-02
+   dp              d               9.401152E-10     2.666185E-02
+   dt              d               1.005414E-09     1.601302E-02
+   dd              d               1.168929E-09     5.523336E-03
+   acp             a                1.01041          3.51224    
+   aclp            a                1.00500         6.609246E-02
+   acs             a                1.01041          3.51224    
+   acls            a                1.00050         0.196878    
+
+
+ OPTIMISATION ITERATION NO. 17 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.154262    
+   r_t             r               6.845114E-02     7.851703E-02
+   r_d             r               4.463425E-02     2.574279E-02
+   dp              d               9.399802E-10     2.665808E-02
+   dt              d               1.010022E-09     1.603982E-02
+   dd              d               1.130318E-09     5.532826E-03
+   acp             a                1.01041          3.51204    
+   aclp            a                1.00500         6.608597E-02
+   acs             a                1.01041          3.51204    
+   acls            a                1.00050         0.196883    
+
+
+ OPTIMISATION ITERATION NO. 18 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.154262    
+   r_t             r               6.845230E-02     7.851747E-02
+   r_d             r               4.464254E-02     2.574659E-02
+   dp              d               9.399966E-10     2.665826E-02
+   dt              d               1.010007E-09     1.603973E-02
+   dd              d               1.130022E-09     5.532740E-03
+   acp             a                1.01041          3.51201    
+   aclp            a                1.00500         6.608736E-02
+   acs             a                1.01041          3.51201    
+   acls            a                1.00050         0.196881    
+
+
+ OPTIMISATION ITERATION NO. 19 ----->
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.154262    
+   r_t             r               6.845228E-02     7.851747E-02
+   r_d             r               4.464274E-02     2.574670E-02
+   dp              d               9.399970E-10     2.665826E-02
+   dt              d               1.010009E-09     1.603974E-02
+   dd              d               1.129996E-09     5.532744E-03
+   acp             a                1.01041          3.51201    
+   aclp            a                1.00500         6.608738E-02
+   acs             a                1.01041          3.51201    
+   acls            a                1.00050         0.196881    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "conc" ----->
+
+ Number of observations with non-zero weight =    18
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.262191    
+   r_t             r               6.845228E-02     0.176032    
+   r_d             r               4.464274E-02     4.966229E-02
+   dp              d               9.399970E-10     7.646884E-02
+   dt              d               1.010009E-09     4.629402E-02
+   dd              d               1.129996E-09     1.583156E-02
+   acp             a                1.01041         1.352535E-03
+   aclp            a                1.00500         2.969892E-02
+   acs             a                1.01041         1.352535E-03
+   acls            a                1.00050         8.656131E-02
+
+
+
+ Composite sensitivities for observation group "deltac" ----->
+
+ Number of observations with non-zero weight =    18
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.360347    
+   r_t             r               6.845228E-02     0.142756    
+   r_d             r               4.464274E-02     5.536026E-02
+   dp              d               9.399970E-10     9.129498E-03
+   dt              d               1.010009E-09     1.949509E-03
+   dd              d               1.129996E-09     2.049149E-03
+   acp             a                1.01041          10.1458    
+   aclp            a                1.00500         4.811519E-02
+   acs             a                1.01041          10.1458    
+   acls            a                1.00050         0.131111    
+
+
+
+ Composite sensitivities for observation group "deltacl" ----->
+
+ Number of observations with non-zero weight =    16
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         3.038256E-03
+   r_t             r               6.845228E-02     1.035295E-02
+   r_d             r               4.464274E-02     1.224902E-03
+   dp              d               9.399970E-10     4.126170E-04
+   dt              d               1.010009E-09     4.811209E-04
+   dd              d               1.129996E-09     8.961443E-04
+   acp             a                1.01041         1.008357E-03
+   aclp            a                1.00500         0.205148    
+   acs             a                1.01041         1.008357E-03
+   acls            a                1.00050         0.614968    
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    52
+ Parameter name    Group          Current value    Sensitivity
+   r_p             r               0.100000         0.154262    
+   r_t             r               6.845228E-02     7.851747E-02
+   r_d             r               4.464274E-02     2.574670E-02
+   dp              d               9.399970E-10     2.665826E-02
+   dt              d               1.010009E-09     1.603974E-02
+   dd              d               1.129996E-09     5.532744E-03
+   acp             a                1.01041          3.51201    
+   aclp            a                1.00500         6.608738E-02
+   acs             a                1.01041          3.51201    
+   acls            a                1.00050         0.196881    

@@ -1,0 +1,405 @@
+
+                    PEST RUN RECORD: CASE example001b
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :     1
+   Number of adjustable parameters                :     1
+   Number of parameter groups                     :     1
+   Number of observations                         :    12
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   modelcommands
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      EXAMPLE001.tpl
+   for model input files:
+      EXAMPLE001.inp
+
+   (Parameter values written using double precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      EXAMPLE001PCE.ins
+      EXAMPLE001deltaCPCE.ins
+   for reading model output files:
+      PCE001.dat
+      deltaC_PCE001.dat
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 5
+   Ratio of lowest/highest singular value        :  5.000000E-07
+   Record eigenvectors in SVD file               : yes
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+r            relative    1.0000E-03   none         switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+r_p          log               factor     1.000000E-03   1.000000E-05    100.000    
+
+Name         Group          Scale         Offset        Model command number
+r_p          r             1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ pcez2t0                2.292948E-05      20.60       conc        
+ pcez2t5                5.483010E-02      20.60       conc        
+ pcez2t10               1.525985E-02      20.60       conc        
+ pcez5t0                 0.00000          20.60       conc        
+ pcez5t5                3.645382E-02      20.60       conc        
+ pcez5t10               1.343228E-02      20.60       conc        
+ deltacpcez2t0         -0.292519          0.000       delta       
+ deltacpcez2t5           10.1044          0.000       delta       
+ deltacpcez2t10          20.4468          0.000       delta       
+ deltacpcez5t0         -0.284142          0.000       delta       
+ deltacpcez5t5           9.82095          0.000       delta       
+ deltacpcez5t10          20.1208          0.000       delta       
+
+
+Control settings:-
+
+   Initial lambda                                               :  5.0000    
+   Lambda adjustment factor                                     :  2.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+
+   Maximum  factor  parameter change (factor-limited changes)   :  3.0000
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.10000E-01
+   Number of phi values required within this range              :   3
+   Maximum number of consecutive failures to lower phi          :   3
+   Minimal relative parameter change indicating convergence     : 0.10000E-01
+   Number of consecutive iterations with minimal param change   :   3
+   Maximum number of optimisation iterations                    :  50
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   12.392    
+   Contribution to phi from observation group "conc"        =   12.392    
+   Contribution to phi from observation group "delta"       =   0.0000    
+
+      Current parameter values
+      r_p             1.000000E-03
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   12.392    
+   Contribution to phi from observation group "conc"        :   12.392    
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =   5.0000     ----->
+          Phi =   11.435      (  0.923 of starting phi)
+
+       Lambda =   2.5000     ----->
+          Phi =   11.435      (  0.923 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   11.435    
+   Relative phi reduction between optimisation iterations less than 0.1000
+   Switch to central derivatives calculation
+
+      Current parameter values                 Previous parameter values
+      r_p             3.000000E-03             r_p              1.000000E-03
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 4
+   Starting phi for this iteration                          :   11.435    
+   Contribution to phi from observation group "conc"        :   11.435    
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =   1.2500     ----->
+          Phi =   8.9575      (  0.783 of starting phi)
+
+       Lambda =  0.62500     ----->
+          Phi =   8.9575      (  0.783 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   8.9575    
+
+      Current parameter values                 Previous parameter values
+      r_p             9.000000E-03             r_p              3.000000E-03
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 3
+   Model calls so far             : 8
+   Starting phi for this iteration                          :   8.9575    
+   Contribution to phi from observation group "conc"        :   8.9575    
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =  0.31250     ----->
+          Phi =   4.1394      (  0.462 of starting phi)
+
+       Lambda =  0.15625     ----->
+          Phi =   4.1394      (  0.462 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   4.1394    
+
+      Current parameter values                 Previous parameter values
+      r_p             2.700000E-02             r_p              9.000000E-03
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 4
+   Model calls so far             : 12
+   Starting phi for this iteration                          :   4.1394    
+   Contribution to phi from observation group "conc"        :   4.1394    
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =  7.81250E-02 ----->
+          Phi =  0.12027      (  0.029 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  0.12027    
+
+      Current parameter values                 Previous parameter values
+      r_p             8.100000E-02             r_p              2.700000E-02
+   Maximum   factor change:  3.000     ["r_p"]
+   Maximum relative change:  2.000     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 5
+   Model calls so far             : 15
+   Starting phi for this iteration                          :  0.12027    
+   Contribution to phi from observation group "conc"        :  0.12027    
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =  3.90625E-02 ----->
+          Phi =  5.11082E-05  (  0.000 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  5.11082E-05
+
+      Current parameter values                 Previous parameter values
+      r_p             9.955823E-02             r_p              8.100000E-02
+   Maximum   factor change:  1.229     ["r_p"]
+   Maximum relative change: 0.2291     ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 6
+   Model calls so far             : 18
+   Starting phi for this iteration                          :  5.11082E-05
+   Contribution to phi from observation group "conc"        :  5.11082E-05
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =  1.95313E-02 ----->
+          Phi =  1.88753E-11  (  0.000 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  1.88753E-11
+
+      Current parameter values                 Previous parameter values
+      r_p             9.999973E-02             r_p              9.955823E-02
+   Maximum   factor change:  1.004     ["r_p"]
+   Maximum relative change: 4.4346E-03 ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 7
+   Model calls so far             : 21
+   Starting phi for this iteration                          :  1.88753E-11
+   Contribution to phi from observation group "conc"        :  1.88753E-11
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =  9.76563E-03 ----->
+          Phi =  1.06832E-17  (  0.000 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  1.06832E-17
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100000                 r_p              9.999973E-02
+   Maximum   factor change:  1.000     ["r_p"]
+   Maximum relative change: 2.6923E-06 ["r_p"]
+
+
+OPTIMISATION ITERATION NO.        : 8
+   Model calls so far             : 24
+   Starting phi for this iteration                          :  1.06832E-17
+   Contribution to phi from observation group "conc"        :  1.06832E-17
+   Contribution to phi from observation group "delta"       :   0.0000    
+
+       Lambda =  4.88281E-03 ----->
+          Phi =  1.06832E-17  (  1.000 of starting phi)
+
+       Lambda =  2.44141E-03 ----->
+          Phi =  1.06832E-17  (  1.000 of starting phi)
+
+       Lambda =  9.76563E-03 ----->
+          Phi =  1.06832E-17  (  1.000 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:  1.06832E-17
+
+      Current parameter values                 Previous parameter values
+      r_p             0.100000                 r_p              0.100000    
+   Maximum   factor change:  1.000     ["r_p"]
+   Maximum relative change: 4.0000E-12 ["r_p"]
+
+   Optimisation complete: relative parameter change less than 1.0000E-02
+                          over  3 successive iterations.
+   Total model calls:     29
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ r_p            0.100000    
+
+See file example001b.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+pcez2t0               2.292948E-05   2.292948E-05   3.388132E-21    20.60      conc        
+pcez2t5               5.483010E-02   5.483010E-02   6.938894E-18    20.60      conc        
+pcez2t10              1.525985E-02   1.525985E-02   6.938894E-18    20.60      conc        
+pcez5t0                0.00000      -1.586887E-10   1.586887E-10    20.60      conc        
+pcez5t5               3.645382E-02   3.645382E-02   6.938894E-18    20.60      conc        
+pcez5t10              1.343228E-02   1.343228E-02   3.469447E-18    20.60      conc        
+deltacpcez2t0        -0.292519      -0.292519        0.00000        0.000      delta       
+deltacpcez2t5          10.1044        10.1044      -2.238210E-13    0.000      delta       
+deltacpcez2t10         20.4468        20.4468      -2.238210E-13    0.000      delta       
+deltacpcez5t0        -0.284142      -0.284142        0.00000        0.000      delta       
+deltacpcez5t5          9.82095        9.82095      -4.458656E-13    0.000      delta       
+deltacpcez5t10         20.1208        20.1208        0.00000        0.000      delta       
+
+See file example001b.res for more details of residuals in graph-ready format.
+
+See file example001b.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =  1.0683E-17
+  Contribution to phi from observation group "conc"         =  1.0683E-17
+  Contribution to phi from observation group "delta"        =   0.000    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =   1.000    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =     6
+     Mean value of non-zero weighted residuals                      =  5.4475E-10
+     Maximum weighted residual [observation "pcez5t0"]              =  3.2685E-09
+     Minimum weighted residual [observation "pcez2t0"]              =  6.9785E-20
+     Standard variance of weighted residuals                        =  2.1366E-18
+     Standard error of weighted residuals                           =  1.4617E-09
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "conc":-
+     Number of residuals with non-zero weight                       =     6
+     Mean value of non-zero weighted residuals                      =  5.4475E-10
+     Maximum weighted residual [observation "pcez5t0"]              =  3.2685E-09
+     Minimum weighted residual [observation "pcez2t0"]              =  6.9785E-20
+     "Variance" of weighted residuals                               =  1.7805E-18
+     "Standard error" of weighted residuals                         =  1.3344E-09
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "delta":-
+     Number of residuals with non-zero weight                       =     0
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+

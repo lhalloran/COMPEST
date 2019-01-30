@@ -1,0 +1,102 @@
+pcf
+* control data
+restart  estimation
+    10    54     3     0     3
+    1     9 double point   1   0   0
+  5.0   2.0   0.3  0.03    10
+  3.0   3.0 0.001  0
+  0.1
+   50  0.01     3     3  0.01     3
+    1     1     1
+* singular value decomposition
+1
+10 5E-7
+1
+* parameter groups
+R       relative 0.001  0.0  switch  2.0 parabolic
+D       relative 0.001  0.0  switch  2.0 parabolic
+A       relative 0.001  0.0  switch  2.0 parabolic
+* parameter data
+R_P       log  factor   1.000E-3  1.0000000E-5    1.000000E+2 R          1.0000        0.0000      1
+R_T       log  factor   1.000E-3  1.0000000E-5    1.000000E+2 R          1.0000        0.0000      1
+R_D       log  factor   1.000E-3  1.0000000E-5    1.000000E+2 R          1.0000        0.0000      1
+DP        log  factor   1.000E-9  1.0000000E-12   1.000000E-7 D          1.0000        0.0000      1
+DT        log  factor   1.000E-9  1.0000000E-12   1.000000E-7 D          1.0000        0.0000      1
+DD        log  factor   1.000E-9  1.0000000E-12   1.000000E-7 D          1.0000        0.0000      1
+ACp      none  factor   1.000E00  1.0000000E0     1.057000E0  A          1.0000        0.0000      1
+AClp     none  factor   1.000E00  1.0000000E0     1.013000E0  A          1.0000        0.0000      1
+ACs      none  factor   1.000E00  1.0000000E0     1.028500E0  A          1.0000        0.0000      1
+ACls     none  factor   1.000E00  1.0000000E0     1.006500E0  A          1.0000        0.0000      1
+* observation groups
+conc
+deltac
+deltacl
+* observation data
+ pcez2t0              2.292947521225811E-5   1.00000E00      conc
+ pcez2t5              0.05495767108056757   1.00000E00      conc
+ pcez2t10             0.01529326005441545   1.00000E00      conc
+ pcez5t0               0.00000000000       1.00000E00      conc
+ pcez5t5              0.03637762233229347   1.00000E00      conc
+ pcez5t10             0.013444325164197114   1.00000E00      conc
+ deltacpcez2t0       -0.29251639401861596       1.00000E00      deltac
+ deltacpcez2t5         10.578242617548028       1.00000E00      deltac
+ deltacpcez2t10        21.446069779172294       1.00000E00      deltac
+ deltacpcez5t0       -0.28413901174151324       1.00000E00      deltac
+ deltacpcez5t5         10.32847155589045       1.00000E00      deltac
+ deltacpcez5t10        21.126857164402324       1.00000E00      deltac
+ deltaclpcez2t0       12.358541552131896      1.00000E00      deltacl
+ deltaclpcez2t5        14.914644758889928      1.00000E00      deltacl
+ deltaclpcez2t10       16.615826711690485     1.00000E00      deltacl
+ deltaclpcez5t0       12.375892858670134      1.00000E00      deltacl
+ deltaclpcez5t5        14.605838833728457     1.00000E00      deltacl
+ deltaclpcez5t10       16.38973298535662     1.00000E00      deltacl
+ tcez2t0              0.000000			   1.00000E00      conc
+ tcez2t5              0.06418429130980827   1.00000E00      conc
+ tcez2t10             0.04318092908605497   1.00000E00      conc
+ tcez5t0               0.000000       1.00000E00      conc
+ tcez5t5              0.04279297537192808   1.00000E00      conc
+ tcez5t10             0.03795803530871092   1.00000E00      conc
+ deltactcez2t0       -10.574819605565944       1.00000E00      deltac
+ deltactcez2t5        -1.6825989140463182       1.00000E00      deltac
+ deltactcez2t10       6.782190246431119       1.00000E00      deltac
+ deltactcez5t0       -10.563768500853609       1.00000E00      deltac
+ deltactcez5t5        -1.8507580501599952       1.00000E00      deltac
+ deltactcez5t10        6.607178244142142      1.00000E00      deltac
+ deltacltcez2t0       -1.1149868041918642      1.00000E00      deltacl
+ deltacltcez2t5        1.231785413678077      1.00000E00      deltacl
+ deltacltcez2t10       2.652197560992331      1.00000E00      deltacl
+ deltacltcez5t0       -1.089778239549588      1.00000E00      deltacl
+ deltacltcez5t5        0.930582778436051     1.00000E00      deltacl
+ deltacltcez5t10       2.4477052791640475      1.00000E00      deltacl
+ dcez2t0              0.00000000000   1.00000E00      conc
+ dcez2t5              0.02445719399766282   1.00000E00      conc
+ dcez2t10             0.03812904863758776   1.00000E00      conc
+ dcez5t0               0.000000       1.00000E00      conc
+ dcez5t5              0.016663878665456638   1.00000E00      conc
+ dcez5t10             0.033892578101809165   1.00000E00      conc
+ deltacdcez2t0       -20.96691485276059       1.00000E00      deltac
+ deltacdcez2t5       -13.260206673920027       1.00000E00      deltac
+ deltacdcez2t10       -6.492343023554836      1.00000E00      deltac
+ deltacdcez5t0       -20.94087909289344      1.00000E00      deltac
+ deltacdcez5t5       -13.488720293567514       1.00000E00      deltac
+ deltacdcez5t10      -6.669471391416049      1.00000E00      deltac
+ deltacldcez2t0       -999.5394183437495      0.00000E00      deltacl
+ deltacldcez2t5        -9.804759647390803      1.00000E00      deltacl
+ deltacldcez2t10       0.4491324686475284      1.00000E00      deltacl
+ deltacldcez5t0       -999.5455787877576      0.00000E00      deltacl
+ deltacldcez5t5       -9.925866040577326      1.00000E00      deltacl
+ deltacldcez5t10      0.22935580348559803     1.00000E00      deltacl
+* model command line
+modelcommands
+* model input/output
+EXAMPLE002.tpl  EXAMPLE002.inp
+EXAMPLE002PCE.ins  PCE002.dat
+EXAMPLE002deltaCPCE.ins  deltaC_PCE002.dat
+EXAMPLE002deltaClPCE.ins  deltaCl_PCE002.dat
+EXAMPLE002TCE.ins  TCE002.dat
+EXAMPLE002deltaCTCE.ins  deltaC_TCE002.dat
+EXAMPLE002deltaClTCE.ins  deltaCl_TCE002.dat
+EXAMPLE002DCE.ins  DCE002.dat
+EXAMPLE002deltaCDCE.ins  deltaC_DCE002.dat
+EXAMPLE002deltaClDCE.ins  deltaCl_DCE002.dat
+* prior information
