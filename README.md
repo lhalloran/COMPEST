@@ -1,5 +1,6 @@
 # COMPEST
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2553569.svg)](https://doi.org/10.5281/zenodo.2553569)
+
 An interface connecting COMSOL Multiphysics and PEST to solve inverse modelling problems using forward finite element models. 
 
 ![COMPEST is an interface between PEST and COMSOL Multiphysics](extras/COMPEST_interface_diagram.png)
