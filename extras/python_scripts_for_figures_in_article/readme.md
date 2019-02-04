@@ -1,0 +1,1 @@
+This folder contains a python script (Halloran_COMPEST_paper_plots.py) and data files used to make most of the figures in the COMPEST Computers and Geosciences article.
