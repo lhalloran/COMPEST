@@ -1,0 +1,6 @@
+$ cat .gitattributes
+*/*/*.csv linguist-vendored=true
+*/*/*/*.csv linguist-vendored=true
+*/*.ins linguist-vendored=true
+*/*.rei linguist-vendored=true
+*/*.tpl linguist-vendored=true
