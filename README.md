@@ -6,7 +6,7 @@ An interface connecting COMSOL Multiphysics and PEST to solve inverse modelling 
 ![COMPEST is an interface between PEST and COMSOL Multiphysics](extras/COMPEST_interface_diagram.png)
 
 ## The paper
-Halloran et al. (2019), _Computers and Geosciences_ (see details below). 
+Halloran et al. (2019), https://doi.org/10.1016/j.cageo.2019.02.001 (_see details below or folder_ `extras/`). 
 
 ## Author and contact
 Written by Dr. Landon J.S. Halloran, 2018. www.ljsh.ca
@@ -66,4 +66,4 @@ _Replace the paths with the locations of your COMSOL java API files or server ex
 
 ## References:
 * Doherty, J. (2016). PEST Model-Independent Parameter Estimation User Manual Part I: PEST, SENSAN and Global Optimisers (6th ed.). Brisbane: Watermark Numerical Computing.
-* Halloran, L.J.S., P. Brunner, & D. Hunkeler (2019). "COMPEST, a PEST-COMSOL interface for inverse multiphysics modelling: Development and application to isotopic fractionation of groundwater contaminants," _Computers and Geosciences_.
+* Halloran, L.J.S., P. Brunner, & D. Hunkeler (2019). "COMPEST, a PEST-COMSOL interface for inverse multiphysics modelling: Development and application to isotopic fractionation of groundwater contaminants," _Computers and Geosciences_. https://doi.org/10.1016/j.cageo.2019.02.001
